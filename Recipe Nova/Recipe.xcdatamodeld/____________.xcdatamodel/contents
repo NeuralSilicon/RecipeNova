@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="15508" systemVersion="19B88" minimumToolsVersion="Automatic" sourceLanguage="Swift" usedWithCloudKit="YES" userDefinedModelVersionIdentifier="">
+    <entity name="BackUp" representedClassName="BackUp" syncable="YES" codeGenerationType="class">
+        <attribute name="category" optional="YES" attributeType="UUID" usesScalarValueType="NO"/>
+        <attribute name="id" optional="YES" attributeType="UUID" usesScalarValueType="NO"/>
+        <attribute name="recipe" optional="YES" attributeType="String"/>
+    </entity>
+    <entity name="Cart" representedClassName="Cart" syncable="YES" codeGenerationType="class">
+        <attribute name="id" optional="YES" attributeType="UUID" usesScalarValueType="NO"/>
+        <attribute name="list" optional="YES" attributeType="String"/>
+    </entity>
+    <entity name="RecipeRecord" representedClassName="RecipeRecord" syncable="YES" codeGenerationType="class">
+        <attribute name="category" optional="YES" attributeType="UUID" usesScalarValueType="NO"/>
+        <attribute name="id" optional="YES" attributeType="UUID" usesScalarValueType="NO"/>
+        <attribute name="recipe" optional="YES" attributeType="String"/>
+    </entity>
+    <elements>
+        <element name="BackUp" positionX="-54" positionY="36" width="128" height="88"/>
+        <element name="Cart" positionX="-54" positionY="36" width="128" height="73"/>
+        <element name="RecipeRecord" positionX="-54" positionY="9" width="128" height="88"/>
+    </elements>
+</model>

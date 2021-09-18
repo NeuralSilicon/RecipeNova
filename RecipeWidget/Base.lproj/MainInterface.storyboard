@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="K7J-6H-Csh">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15509"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Today View Controller-->
+        <scene sceneID="RVO-t2-HeO">
+            <objects>
+                <tableViewController id="K7J-6H-Csh" customClass="TodayViewController" customModule="Recipe" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="liB-th-99G">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <prototypes>
+                            <tableViewCell contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="TVCell" rowHeight="54" id="Kdh-jp-FO5" customClass="TVCell" customModule="Recipe" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="28" width="414" height="54"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Kdh-jp-FO5" id="3ke-gb-PFr">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="54"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsLetterSpacingToFitWidth="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3mk-RB-Va1">
+                                            <rect key="frame" x="8" y="8" width="398" height="38"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="38" id="kET-E2-Xhl"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" type="system" weight="medium" pointSize="15"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="3mk-RB-Va1" firstAttribute="top" secondItem="3ke-gb-PFr" secondAttribute="top" constant="8" id="Sxe-pU-T2p"/>
+                                        <constraint firstAttribute="bottom" secondItem="3mk-RB-Va1" secondAttribute="bottom" constant="8" id="Xym-9H-eKt"/>
+                                        <constraint firstItem="3mk-RB-Va1" firstAttribute="leading" secondItem="3ke-gb-PFr" secondAttribute="leading" constant="8" id="odH-sP-j08"/>
+                                        <constraint firstAttribute="trailing" secondItem="3mk-RB-Va1" secondAttribute="trailing" constant="8" id="pt2-h3-WWz"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="Label" destination="3mk-RB-Va1" id="TSW-3m-Gy3"/>
+                                </connections>
+                            </tableViewCell>
+                            <tableViewCell contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="Section" rowHeight="30" id="dz9-nD-L70" customClass="Section" customModule="Recipe" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="82" width="414" height="30"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="dz9-nD-L70" id="EjY-qb-UTV">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="30"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Clear" textAlignment="center" lineBreakMode="wordWrap" baselineAdjustment="alignBaselines" adjustsLetterSpacingToFitWidth="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Sif-QW-w8D">
+                                            <rect key="frame" x="137.5" y="0.0" width="139" height="30"/>
+                                            <fontDescription key="fontDescription" type="system" weight="medium" pointSize="13"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstAttribute="bottom" secondItem="Sif-QW-w8D" secondAttribute="bottom" id="0TR-2P-V4W"/>
+                                        <constraint firstAttribute="trailing" secondItem="Sif-QW-w8D" secondAttribute="trailing" constant="137.62" id="A6V-I8-jHG"/>
+                                        <constraint firstItem="Sif-QW-w8D" firstAttribute="top" secondItem="EjY-qb-UTV" secondAttribute="top" id="GQZ-05-qGI"/>
+                                        <constraint firstItem="Sif-QW-w8D" firstAttribute="leading" secondItem="EjY-qb-UTV" secondAttribute="leading" constant="137.38" id="zBZ-di-WyP"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="Label" destination="Sif-QW-w8D" id="Ce8-Ip-8cH"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="K7J-6H-Csh" id="1hy-NG-6Ya"/>
+                            <outlet property="delegate" destination="K7J-6H-Csh" id="oYh-ki-cJL"/>
+                        </connections>
+                    </tableView>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dja-7X-Orq" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="37.681159420289859" y="70.982142857142847"/>
+        </scene>
+    </scenes>
+</document>
