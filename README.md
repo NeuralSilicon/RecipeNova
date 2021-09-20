@@ -3,6 +3,8 @@
 Introducing **RecipeNova**. 
 Everyone is looking for a great recipe., Let RecipeNova Make It Simple!
 
+![ScreenShot](https://user-images.githubusercontent.com/35051980/133952859-5e8d232f-b18c-47da-ba34-da9903d7ee39.gif)
+
 **Features**
 ------------
 - Instant search
