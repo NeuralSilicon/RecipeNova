@@ -318,6 +318,7 @@ class HomeVC: UIViewController,HomeVCOperation,UNUserNotificationCenterDelegate 
         self.NoView.addSubview(Label)
         self.NoView.addSubview(Image)
     }
+    
     func ShowNoView(){
         self.tableView.addSubview(self.NoView)
         UIView.animate(withDuration: 0.5) {
@@ -325,7 +326,6 @@ class HomeVC: UIViewController,HomeVCOperation,UNUserNotificationCenterDelegate 
         }
     }
     
-        
     
     //MARK: - Options
     @objc func showOptions(){

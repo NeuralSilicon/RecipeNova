@@ -29,7 +29,6 @@ extension HomeVC{
          Load every recipe under the selected category
          for every recipe in our feteched recipes
          remove recipes one by one
-         if autosync is one, delete from cloud as well
          */
         let SH = SavingHandler(recipe: Recipes())
         LoadHandler().FetchFromCoreData(category: UI.CT[IndexPath]) { (recipes) in

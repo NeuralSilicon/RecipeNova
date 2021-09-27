@@ -4,12 +4,6 @@ import CoreData
 
 extension HomeVC{
         
-    /*
-     Fetch Bacck up From CoreData
-     save to cloud
-     if its our cloud already has it then update the recipes
-     then delete it from our back up coredata
-    */
     private func FetchBackUpFromCoreData(completion:(_ done:Bool)->Void){
         let appDelegate = UIApplication.shared.delegate as? AppDelegate
         let context = appDelegate?.persistentContainer.viewContext
