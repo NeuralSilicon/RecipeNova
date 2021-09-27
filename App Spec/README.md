@@ -2,8 +2,8 @@
 
 Team 3
 -----------
-- Ian Cooper - 1525557
-- Dustin Kattner - 1631220
+- Ian Cooper
+- Dustin Kattner
 
 -----------
 - Handbook -> answers and provides all the requests
