@@ -15,18 +15,26 @@ class ThemeCVC: UICollectionViewCell {
     override var isSelected: Bool{
         didSet{
             if self.isSelected{
-                if indx < 3{
-                    self.view.layer.borderColor = UI.AC.toColor().cgColor
-                    self.CheckMark.tintColor = UI.WB ? UIColor.MyTheme.Seven : UIColor.MyTheme.Nine
+                if self.indx < 3{
+                    DispatchQueue.main.async {
+                        self.view.layer.borderColor = UI.AC.toColor().cgColor
+                        self.CheckMark.tintColor = UI.WB ? UIColor.white : UIColor.black
+                    }
                 }else{
-                    self.view.layer.borderColor = UI.WB ? UIColor.black.cgColor:UIColor.white.cgColor
+                    DispatchQueue.main.async {
+                        self.view.layer.borderColor = UI.WB ? UIColor.black.cgColor:UIColor.white.cgColor
+                    }
                 }
             }else{
-                if indx > 2{
-                    self.view.layer.borderColor = UIColor.clear.cgColor
+                if self.indx > 2{
+                    DispatchQueue.main.async {
+                        self.view.layer.borderColor = UIColor.clear.cgColor
+                    }
                 }else{
-                    self.view.layer.borderColor = UIColor.clear.cgColor
-                    self.CheckMark.tintColor = UIColor.clear
+                    DispatchQueue.main.async {
+                        self.view.layer.borderColor = UIColor.clear.cgColor
+                        self.CheckMark.tintColor = UIColor.clear
+                    }
                 }
             }
         }
@@ -46,7 +54,6 @@ class ThemeCVC: UICollectionViewCell {
         
         //SetUp our checkmark image
         self.CheckMark.image = UIImage(systemName: "checkmark")
-        self.CheckMark.image = self.CheckMark.image?.withRenderingMode(.alwaysTemplate)
         self.CheckMark.tintColor = UIColor.clear
 
     }

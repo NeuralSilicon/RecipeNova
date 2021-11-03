@@ -81,6 +81,12 @@ class AddVC: UIViewController,AddVCOperation {
         self.navigationController?.navigationBar.tintColor = .white
         self.navigationController?.navigationBar.barTintColor = UI.AC.toColor().darker
         
+        let appearance = UINavigationBarAppearance()
+        appearance.configureWithOpaqueBackground()
+        appearance.backgroundColor = UI.AC.toColor().darker
+        self.navigationController?.navigationBar.standardAppearance = appearance
+        self.navigationController?.navigationBar.scrollEdgeAppearance = self.navigationController?.navigationBar.standardAppearance
+        
         self.tableView.backgroundColor = UI.AC.toColor()
         self.tableView.separatorColor = .clear
         self.view.backgroundColor = UI.MC.toColor()

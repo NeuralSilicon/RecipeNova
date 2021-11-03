@@ -28,6 +28,12 @@ class AddIngredients: UIViewController,UITextViewDelegate {
         self.navigationController?.navigationBar.tintColor = .white
         self.navigationController?.navigationBar.barTintColor = UI.AC.toColor()
         
+        let appearance = UINavigationBarAppearance()
+        appearance.configureWithOpaqueBackground()
+        appearance.backgroundColor = UI.AC.toColor().darker
+        self.navigationController?.navigationBar.standardAppearance = appearance
+        self.navigationController?.navigationBar.scrollEdgeAppearance = self.navigationController?.navigationBar.standardAppearance
+        
         self.view.backgroundColor = UI.AC.toColor()
         
         self.TextView.delegate=self

@@ -39,6 +39,12 @@ class HomeVC: UIViewController,HomeVCOperation,UNUserNotificationCenterDelegate 
         self.navigationController?.navigationBar.tintColor = .white
         self.navigationController?.navigationBar.barTintColor = UI.AC.toColor().darker
         
+        let appearance = UINavigationBarAppearance()
+        appearance.configureWithOpaqueBackground()
+        appearance.backgroundColor = UI.AC.toColor().darker
+        self.navigationController?.navigationBar.standardAppearance = appearance
+        self.navigationController?.navigationBar.scrollEdgeAppearance = self.navigationController?.navigationBar.standardAppearance
+        
         self.view.backgroundColor = UI.MC.toColor()
         self.tableView.separatorColor = UI.MC.toColor().withAlphaComponent(0.7)
         self.tableView.backgroundColor = .clear
@@ -149,6 +155,12 @@ class HomeVC: UIViewController,HomeVCOperation,UNUserNotificationCenterDelegate 
         self.navigationController?.navigationBar.tintColor = .white
         self.navigationController?.navigationBar.isTranslucent = false
         self.navigationController?.navigationBar.barTintColor = UI.AC.toColor().darker
+        
+        let appearance = UINavigationBarAppearance()
+        appearance.configureWithOpaqueBackground()
+        appearance.backgroundColor = UI.AC.toColor().darker
+        self.navigationController?.navigationBar.standardAppearance = appearance
+        self.navigationController?.navigationBar.scrollEdgeAppearance = self.navigationController?.navigationBar.standardAppearance
         
         self.view.backgroundColor = UI.MC.toColor()
         self.tableView.backgroundColor = .clear

@@ -42,6 +42,12 @@ class SettingsTV: UITableViewController,SettingOperation {
         self.navigationController?.navigationBar.tintColor = .white
         self.navigationController?.navigationBar.barTintColor = UI.AC.toColor().darker
         
+        let appearance = UINavigationBarAppearance()
+        appearance.configureWithOpaqueBackground()
+        appearance.backgroundColor = UI.AC.toColor().darker
+        self.navigationController?.navigationBar.standardAppearance = appearance
+        self.navigationController?.navigationBar.scrollEdgeAppearance = self.navigationController?.navigationBar.standardAppearance
+        
         self.tableView.backgroundColor = UI.MC.toColor()
         self.tableView.separatorColor = UI.MC.toColor().withAlphaComponent(0.7)
         
