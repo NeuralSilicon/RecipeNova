@@ -111,6 +111,12 @@ class CartVC: UIViewController,UISearchControllerDelegate, UISearchResultsUpdati
         self.navigationController?.interactivePopGestureRecognizer?.isEnabled = true
         self.navigationController?.interactivePopGestureRecognizer?.delegate = self
         
+        let appearance = UINavigationBarAppearance()
+        appearance.configureWithOpaqueBackground()
+        appearance.backgroundColor = UI.AC.toColor().darker
+        appearance.titleTextAttributes = [NSAttributedString.Key.foregroundColor:UIColor.white]
+        self.navigationController?.navigationBar.standardAppearance = appearance
+        self.navigationController?.navigationBar.scrollEdgeAppearance = self.navigationController?.navigationBar.standardAppearance
         self.navigationItem.title = UI.EF ? "Cart":"سبد"
         
         self.view.backgroundColor = UI.MC.toColor()
